@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 		//得到ListView的内容
 		mPlanetTitles = getResources().getStringArray(R.array.listview_menu);
 	
-		//利用适配器填装数据
+		//利用适配器来配置list view里面的item
 		mDListView.setAdapter( new ArrayAdapter<String>(this, 
 				R.layout.drawer_list_item, mPlanetTitles));
 		
